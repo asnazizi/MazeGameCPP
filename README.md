@@ -2,7 +2,9 @@
 Team members - Sathya Geetha Balaji, Aisan Azizi
 
 Objective - to solve the maze and reach the end point
+
 Description - A game based on solving mini games at each crossroad of the maze to reach the end
+
 Steps 
 1) Welcome message is shown to user and they enter the maze .
 2) The program automatically takes the user to the next crossroad.
