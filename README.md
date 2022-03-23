@@ -22,6 +22,6 @@ Game rules:
 List of Features: 
 1. Generation of random game sets or events - Sudden-death mini game, as an obstacle at any random turn of the user. 
 2. Data structures for storing game status - Vector that stores the user position (which crossroad they are at). 
-3. Dynamic memory management - 
+3. Dynamic memory management - Minigames will include inputs from user to determine array size of certain data.
 4. File input/output - Input is user's choice between mini-games/previous crossroad, mini-game I/O, and choice of the path they wish to take. Output is the choice between minigames/previous cross-roads (if applicable), and dead-end pop-up message. 
 5. Program codes in multiple files - Welcome message and game rule file, each mini-game stored in seperate file, random-obstacle generator file, maze stored in main file.
