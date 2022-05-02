@@ -19,22 +19,21 @@ Game rules:
 
 List of Features: 
 1) Generation of random game sets or events:
-  - Randomely generated maze
-  - Randomely executed minigames
+    - Randomely generated maze
+    - Randomely executed minigames
   
 2) Data structures for storing game status:
-  - Dynamic array storing user progress throughout the maze
+    - Dynamic array storing user progress throughout the maze
   
 3) Dynamic memory management:
-  - Maze generated in dynamic array by user's inputted dimensions
+    - Maze generated in dynamic array by user's inputted dimensions
   
 4) File input/output (e.g., for loading/saving game status)
 
 5) Program codes in multiple files:
-  Seperate files for:
-  - Welcome message and game rules
-  - Mini-game
-  - Maze 
+    - Welcome message and game rules
+    - Mini-game
+    - Maze 
  
 Compilation and Execution Instructions:
 
