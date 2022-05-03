@@ -1,7 +1,7 @@
 # G134 - Maze and Mini games 
 Team members - Sathya Geetha Balaji, Aisan Azizi
 
-Objective - to solve the maze and reach the end point
+Objective - To solve the maze and reach the end point
 
 Description - A game based on passing through a maze, whilst solving random minigames, to reach the end
 
@@ -33,6 +33,7 @@ List of Features:
     - Loading game status of user from mini-games to maze, not allowing progress until mini-game has been won.
 
 5) Program codes in multiple files:
+ (It should be noted that the system() command was used to link files)
     - Maze
     - Riddle mini game
     - Rock Paper Scissors mini game
@@ -40,12 +41,18 @@ List of Features:
     - Tic-Tac-Toe mini game
     - Word Jumble mini game
     - Math mini game
+ 
     
 6) Others
-    - Easy quick start as main program compiles all mini-games automatically
-    - Possible errors in user input/file compilation/file execution foreseen and measures in place
+    - Easy quick start as main program compiles all mini-games automatically using system() command.
+    - Multiple mini games allowing different interactions between user and program
+    - Possible errors in user input/file compilation/file execution foreseen and measures in place.
  
 Compilation and Execution Instructions:
 1) Download all included files (.txt .cpp) in src directory. Ensure their placement in same directory.
 2) Compile "maze.cpp" file using "g++ -pedantic-errors -std=c++11 maze.cpp -o maze".
 3) Execute game by inputting "./maze" in console.
+
+Notes:
+- Server used for testing is academy21
+- Sample I/O files may be located in sample directory
