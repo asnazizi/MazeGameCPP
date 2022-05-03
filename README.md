@@ -33,15 +33,19 @@ List of Features:
     - Loading game status of user from mini-games to maze, not allowing progress until mini-game has been won.
 
 5) Program codes in multiple files:
-    - Welcome message and game rules.
-    - Mini-games.
-    - Maze. 
+    - Maze
+    - Riddle mini game
+    - Rock Paper Scissors mini game
+    - Word Search mini game
+    - Tic-Tac-Toe mini game
+    - Word Jumble mini game
+    - Math mini game
     
 6) Others
     - Easy quick start as main program compiles all mini-games automatically
     - Possible errors in user input/file compilation/file execution foreseen and measures in place
  
 Compilation and Execution Instructions:
-1) Download all included files (txt,cpp) and ensure their placement in same directory.
+1) Download all included files (.txt .cpp) in src directory. Ensure their placement in same directory.
 2) Compile "maze.cpp" file using "g++ -pedantic-errors -std=c++11 maze.cpp -o maze".
 3) Execute game by inputting "./maze" in console.
