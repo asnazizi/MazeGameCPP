@@ -330,6 +330,14 @@ void Play(char* maze, int c, int r)
 
 int main()
 {
+    cout << "WELCOME TO MAZE AND MINI GAMES!\n" << endl;
+    cout << "Before we begin, we would like to introduce you to the game rules:\n\n"
+        << "    1. The aim of the game is for you to reach the right/east wall of the maze.\n\n"
+        << "    2. You may encounter obstacles set in your path that you must overcome to proceed.\n\n"
+        << "    3. Try to follow our input answer guidelines, but don't worry!\n"
+        << "       We have measures in place in case you mess up.\n\n"
+        << "    4. Have fun and try your best to beat the maze!\n" << endl;
+    
     int c, r;   // maze column and row dimensions
 
     cout << "Choose your maze dimensions (51>columns>9, 51>rows>9): " << endl;
