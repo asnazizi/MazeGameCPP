@@ -4,6 +4,9 @@
 #include <fstream>
 using namespace std;
 
+// Input: tic-tac-toe board (type string array)
+// Output: -
+// Function: print tic-tac-toe board
 void ShowBoard(string board[][3])
 {
     cout << "+---+---+---+" << endl;
@@ -16,8 +19,12 @@ void ShowBoard(string board[][3])
     }
 }
 
-int draw = 0;
-string win = "";
+int draw = 0;   // counts cells until draw
+string win = "";    // stores the piece, if any, that has won
+
+// Input: tic-tac-toe board (type string array)
+// Output: game over value (type bool)
+// Function: checks whether the game has been won/ is a draw
 bool GameOver(string board[][3])
 {
     int draw = 0;
@@ -39,12 +46,12 @@ bool GameOver(string board[][3])
         win = board[1][1];
         return true;
     }
-    else if (board[0][2]==board[1][1] && board[1][1]==board[2][0]) // positive diagonal
+    else if (board[0][2]==board[1][1] && board[1][1]==board[2][0]) // positive diagonal win
     {
         win = board[1][1];
         return true;
     }
-    else if (draw == 9)
+    else if (draw == 9) // draw
     {
         win = "No one";
         return true;
@@ -53,20 +60,26 @@ bool GameOver(string board[][3])
         return false;
 }
 
+// Input: tic-tac-toe board (type string array), user's piece (type string)
+// Output: -
+// Function: computer makes random move on tic-tac-toe board
 void RandomMove(string board[][3], string piece_u)
 {
     srand(int(time(0)));
     string piece, move;
     bool invalid = true;
 
-    if (piece_u == "X")
-        piece = "O";
+    if (piece_u == "X") // computer's piece
+        piece = "O";    
     else
         piece = "X";
 
     while (invalid)
     {
-        move = to_string(rand()%9+1);
+        move = to_string(rand()%9+1);   // random move
+
+        /* validating and executing move */
+
         if (move == "1")
         {
             if (board[0][0]!="1")
@@ -138,6 +151,9 @@ void RandomMove(string board[][3], string piece_u)
     cout << endl;
 }
 
+// Input: tic-tac-toe board (type string array), user's piece (type string)
+// Output: -
+// Function: stimulate play of tic-tac-toe, with user's move and computer's random move
 void Play(string board[][3], string piece)
 {
     string move;
@@ -147,6 +163,8 @@ void Play(string board[][3], string piece)
         cout << "Choose your move (1-9): ";
         cin >> move;
         cout << endl;
+
+        /* validating and executing move */
 
         if (move == "1")
         {
@@ -238,7 +256,7 @@ void Play(string board[][3], string piece)
             board[2][2] = piece;
             draw+=1;
         }
-        else
+        else    // error
             cout << "Invalid input. Try again.\n" << endl;
         
         if (GameOver(board))
@@ -258,20 +276,20 @@ int main()
 
     cout << "Let's Play Tic-Tac-Toe!\n\nChoose your piece (X/O): " ;
     cin >> piece;
-    while (piece != "X" && piece != "O")
+    while (piece != "X" && piece != "O")    // error
     {
         cout << "\nInvalid input. Try again.\n" << endl;
         cout << "Choose your piece (X/O): ";
         cin >> piece;
     }
 
-    Play(board, piece);
+    Play(board, piece); // stimulating game
 
-    ofstream myfile;
+    ofstream myfile;    // storing status of game in file.txt
     myfile.open("file.txt");
     if (win == piece)
     {
-        cout << "\nYou won! You may proceed.\n" << endl;
+        cout << "\nYou won! You may proceed.\n" << endl;    
         myfile << 1 << endl;
     }
     else
