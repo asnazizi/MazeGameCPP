@@ -57,5 +57,5 @@ Compilation and Execution Instructions:
 3) Execute game by inputting "./maze" in console.
 
 Notes:
-    - Server used for testing is academy21
-    - Sample I/O pdf may be located in sample directory
+    - Server used for testing is academy21.
+    - SampleI/O pdf may be located in sample directory.
