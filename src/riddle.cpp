@@ -7,6 +7,9 @@
 using namespace std; 
 const int num_riddles = 3;
 
+//Input : number of symbols (type int) and the symbol to print (type char)
+//Output : 
+//Function: create a format for printing
 void format(int n, char symbol)
 {
     
@@ -18,7 +21,9 @@ void format(int n, char symbol)
     
     cout << endl;
 }
-
+//Input : asks user input for difficulty level and a guess for the riddle 
+//Output : - 
+//Function: a random riddle is outputted from the selected array and checks whether the answer to that riddle is equal to the guess
 void play_game()
 {  
     enum array{word, riddle, num};
