@@ -18,17 +18,16 @@ Steps:
 Game rules:
 1) Maze dimensions must be between 10 and 50.
 2) Player must play mini-games until win in order to progress.
-3) Player wins maze when they reach east maze wall.
+3) Player wins maze when they reach east/right maze wall.
 
 List of Features: 
 1) Generation of random game sets or events:
     - Randomely generated maze.
-    - Mini-games presented at random foot-steps.
-    - Random sets are generated in all mini games
+    - Random sets are generated in all 6 mini games
   
 2) Data structures for storing game status:
     - Dynamic array storing user progress throughout the maze, loading user progress after completion of mini-game.
-    - Arrays and enum used as data structures in mini-games.
+    - Arrays and enum used as data structures in mini games for storing mini game user status.
   
 3) Dynamic memory management:
     - Maze generated in dynamic array by user's inputted dimensions.
@@ -49,7 +48,7 @@ List of Features:
     
 6) Others
     - Easy quick start as main program compiles all mini-games automatically using system() command.
-    - Multiple mini games allowing different interactions between user and program
+    - Multiple mini games allowing different types of interaction between user and program.
     - Possible errors in user input/file compilation/file execution foreseen and measures in place.
  
 Compilation and Execution Instructions:
@@ -58,5 +57,5 @@ Compilation and Execution Instructions:
 3) Execute game by inputting "./maze" in console.
 
 Notes:
-- Server used for testing is academy21
-- Sample I/O files may be located in sample directory
+    - Server used for testing is academy21
+    - Sample I/O pdf may be located in sample directory
