@@ -179,7 +179,7 @@ void play_game()
     
     else if (guess == the_word)
     {
-       cout << "\nYou won! You may proceed." << endl; 
+       cout << "\nYou won! You may proceed.\n" << endl; 
        fout << 1 << endl;
     }
     
