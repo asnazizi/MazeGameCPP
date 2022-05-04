@@ -334,7 +334,7 @@ int main()
     cout << "WELCOME TO MAZE AND MINI GAMES!\n" << endl;
     cout << "What's your name? ";
     cin >> name;
-    cout << "Nice name " << name << endl;
+    cout << "Nice name " << name << "\n" << endl;
     cout << "Before we begin, we would like to introduce you to the game rules:\n\n"
         << "    1. The aim of the game is for you to reach the right/east wall of the maze.\n\n"
         << "    2. You may encounter obstacles set in your path that you must overcome to proceed.\n\n"
