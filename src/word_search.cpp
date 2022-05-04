@@ -5,6 +5,9 @@
 #include <fstream>
 using namespace std; 
 
+//Input : number of symbols (type int) and the symbol to print (type char)
+//Output : 
+//Function: create a format for printing
 void format(int n, char symbol)
 {
     
@@ -17,7 +20,10 @@ void format(int n, char symbol)
     cout << endl;
 }
 
-int Game()//int current)
+//Input : -
+//Output : outputs the total score of the game (type int)
+//Function: prints a randomly generated 10*10 word search box, inserts three randomly selected words into the box horizontally or vertically and checks whether user guess is equal to the 3 words
+int Game()
 {
     //if (current = rounds) return; 
     char board[10][10];
@@ -34,12 +40,12 @@ int Game()//int current)
         {
             random = rand() % 26; 
             a = 'a' + random;
-            board[i][j] = a; 
+            board[i][j] = a; //output a 10*10 alphabet board
         }
     }
     
     
-    int idx = rand() % 10;
+    int idx = rand() % 10; // three random words from the array
     int idx2 = rand() % 10;
     int idx3 = rand() % 10; 
     
@@ -178,7 +184,7 @@ int Game()//int current)
     cout << "Enter your guess : " ;
     cin >> guess; 
     
-    if (guess == words[idx] || guess == words[idx2] || guess == words[idx3])
+    if (guess == words[idx] || guess == words[idx2] || guess == words[idx3]) //3 turns 
     {
         cout << "You guessed the right word!" << endl; 
         cout << endl;
@@ -192,7 +198,7 @@ int Game()//int current)
        
     }
     
-    return score; 
+    return score; // return the final score after all 3 tries
     
     
 }
