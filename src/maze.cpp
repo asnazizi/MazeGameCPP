@@ -330,7 +330,11 @@ void Play(char* maze, int c, int r)
 
 int main()
 {
+    string name;
     cout << "WELCOME TO MAZE AND MINI GAMES!\n" << endl;
+    cout << "What's your name? ";
+    cin >> name;
+    cout << "Nice name " << name << endl;
     cout << "Before we begin, we would like to introduce you to the game rules:\n\n"
         << "    1. The aim of the game is for you to reach the right/east wall of the maze.\n\n"
         << "    2. You may encounter obstacles set in your path that you must overcome to proceed.\n\n"
@@ -340,20 +344,20 @@ int main()
     
     int c, r;   // maze column and row dimensions
 
-    cout << "Choose your maze dimensions (51>columns>9, 51>rows>9): " << endl;
+    cout << name << ", choose your maze dimensions (51>columns>9, 51>rows>9): " << endl;
     cin >> c >> r;
 
     while (c < 9 or r < 9 or c > 50 or r > 50)  // in case input value is not valid
     {
         cout << "\nInvalid input. Try again.\n" << endl;
-        cout << "Choose your maze dimensions (51>columns>9, 51>rows>9): " << endl;
+        cout << name << ", choose your maze dimensions (51>columns>9, 51>rows>9): " << endl;
         cin >> c >> r;
     }
 
     char* maze=mazegenerator(c,r);   // generate maze
     Play(maze,c,r);     // stimulate play
     ShowMaze(maze,c,r);  // print final win board
-    cout << "\nGame Over! Thank you for playing!" << endl;
+    cout << "\nGame Over! Thank you for playing " << name << "!" << endl;
 
     delete [] maze;
 
