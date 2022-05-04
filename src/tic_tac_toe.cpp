@@ -4,6 +4,21 @@
 #include <fstream>
 using namespace std;
 
+//Input : number of symbols (type int) and the symbol to print (type char)
+//Output : 
+//Function: create a format for printing
+void format(int n, char symbol)
+{
+    
+    for (int i = 0; i < n; i++)
+    {
+        
+        cout << symbol;
+    }
+    
+    cout << endl;
+}
+
 // Input: tic-tac-toe board (type string array)
 // Output: -
 // Function: print tic-tac-toe board
@@ -273,9 +288,13 @@ int main()
 {
     string board[3][3] = {{"1","2","3"},{"4","5","6"},{"7","8","9"}};
     string piece;
-
-    cout << "Let's Play Tic-Tac-Toe!\n\nChoose your piece (X/O): " ;
+    
+    format(80, '_');
+    cout << endl;
+    cout << "TIC-TAC-TOE!\n\nChoose your piece (X/O): " ;
     cin >> piece;
+    format(80, '_');
+    cout << endl;
     while (piece != "X" && piece != "O")    // error
     {
         cout << "\nInvalid input. Try again.\n" << endl;
