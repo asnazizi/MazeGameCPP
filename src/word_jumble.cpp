@@ -4,6 +4,9 @@
 #define rounds 3
 using namespace std; 
 
+//Input : number of symbols (type int) and the symbol to print (type char)
+//Output : 
+//Function: create a format for printing
 void format(int n, char symbol)
 {
     
@@ -16,6 +19,9 @@ void format(int n, char symbol)
     cout << endl;
 }
 
+//Input : user guess (type string) 
+//Output : -
+//Function: checks whether the guess and word is the same 
 void play_game()
 {
     //if (current == rounds) return;
@@ -43,12 +49,12 @@ void play_game()
     int jumble_len = jumble.size();
     for (int i =0; i< jumble_len;i++)
     {
-        int idx1 = rand() % jumble_len;
-        int idx2 = rand() % jumble_len; 
+        int idx1 = rand() % jumble_len; //random index from the word
+        int idx2 = rand() % jumble_len; // random index from the word
         
         char temp = jumble[idx1];
         jumble[idx1] = jumble[idx2];
-        jumble[idx2] = temp;
+        jumble[idx2] = temp; //swap the idices to give a jumbled word 
     }
     
     cout << "Unjumble the word : " << jumble << endl;
@@ -59,7 +65,7 @@ void play_game()
     cin >> guess; 
     cout << endl;
     
-    while ( tries != 2 && guess != the_word)
+    while ( tries != 2 && guess != the_word) // user is allowed to guess twice 
     {
         if (guess == "hint")
         {
@@ -110,10 +116,9 @@ int main()
     cout << endl; 
     format(80, '*');
     cout << endl;
-    //cout << "Unjumble the word : " << jumble << endl;
     
     play_game();
     
-    //cout << "You may continue with the maze!" << endl;
+    
     return 0;
 }
