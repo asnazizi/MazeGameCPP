@@ -10,7 +10,9 @@ const char Scissors = 's';
 static int user_status = 0;
 static int computer_status = 0;
 int win; 
-
+//Input : number of symbols (type int) and the symbol to print (type char)
+//Output : 
+//Function: create a format for printing
 void format(int n, char symbol)
 {
     
@@ -22,7 +24,9 @@ void format(int n, char symbol)
     
     cout << endl;
 }
-
+//Input : -
+//Output : a randomly outputted letter from 's', 'p' or 'r'
+//Function: returns the computer's choice 
 char Computerchoice ()
 {
     int num;
@@ -44,7 +48,9 @@ char Computerchoice ()
         return 's';
     }
 }
-
+//Input : asks for user input for a letter (type char)
+//Output : outputs 's' or 'p' or 'r'(type char)
+//Function: returns the user's input 
 char Userchoice()
 {
     char input; 
@@ -60,6 +66,9 @@ char Userchoice()
     return input; 
 }
 
+//Input : current round (type int)
+//Output : - 
+//Function: checks the user choice compared to computer choice to check who won the current round 
 void play_game(int current)
 {
     if (current == rounds) return;
@@ -109,18 +118,23 @@ void play_game(int current)
     play_game(++current);
 }
 
-void winner()
+//Input : -
+//Output : 1 if user is the winner, 0 if computer is the winner (type bool)
+//Function: checks who won the game compared to all 3 rounds 
+bool winner()
 {
     if (user_status == computer_status)
     {
         //cout << "This game was a tie, please try again" << endl;
         win = computer_status;
+        return false; 
     }
     
     else if (user_status > computer_status)
     {
         //cout << "You won the game! You may pass through" << endl;
         win = user_status;
+        return true;
         
     }
     
@@ -128,6 +142,7 @@ void winner()
     {
         //cout << "You lost this game, please try again" << endl;
         win = computer_status;
+        return false; 
     }
 }
 
@@ -148,9 +163,9 @@ int main()
     play_game(0);
     winner();
     
-    ofstream myfile; 
+    ofstream myfile; // storing status of game in file.txt
     myfile.open("file.txt");
-    if (win == user_status )
+    if (win == true )
     {
         cout << "\nYou won! You may proceed.\n" << endl;    
         myfile << 1 << endl;
