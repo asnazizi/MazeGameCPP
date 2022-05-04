@@ -3,7 +3,7 @@ Team members - Sathya Geetha Balaji, Aisan Azizi
 
 Objective - To solve the maze and reach the end point
 
-Description - A game based on passing through a maze, whilst solving random minigames, to reach the end
+Description - A game based on passing through a user-based maze, whilst solving random minigames, to reach the end
 
 Steps: 
 1) Welcome message is shown to user.
@@ -11,8 +11,9 @@ Steps:
 3) User starts at beginning of generated maze. 
 4) User is prompted to enter direction to move through the maze.
 5) In case of invalid input, user is prompted to try again and is taken to step 4.
-6) In case of mini-game execution, user plays mini-game until win in order to progress.
-7) When user reaches end of maze, game ends.
+6) Mini-games are randomly presented in the maze.
+7) In case of mini-game execution, user plays mini-game until win in order to progress.
+8) When user reaches end of maze, game ends.
 
 Game rules:
 1) Maze dimensions must be between 10 and 50.
@@ -22,9 +23,12 @@ Game rules:
 List of Features: 
 1) Generation of random game sets or events:
     - Randomely generated maze.
+    - Mini-games presented at random foot-steps.
+    - Random sets are generated in all mini games
   
 2) Data structures for storing game status:
     - Dynamic array storing user progress throughout the maze, loading user progress after completion of mini-game.
+    - Arrays and enum used as data structures in mini-games.
   
 3) Dynamic memory management:
     - Maze generated in dynamic array by user's inputted dimensions.
