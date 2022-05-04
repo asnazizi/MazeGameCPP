@@ -7,6 +7,10 @@
 
 using namespace std; 
 
+//Input : number of symbols (type int) and the symbol to print (type char)
+//Output : 
+//Function: create a format for printing
+
 void format(int n, char symbol)
 {
     
@@ -18,6 +22,10 @@ void format(int n, char symbol)
     
     cout << endl;
 }
+
+//Input : current round to start with (type int)
+//Output : the final amount left and current round 
+//Function: returns the final amount to indicate if its a loss or win
 
 void play_game(int current)
 {
@@ -66,13 +74,8 @@ void play_game(int current)
     
     cout << "You have $ " << amount << " remaining" << endl;
     
-    // while(amount <= 10)
-    //     {
-    //         cout << "You have too less money to play";
-    //         break;
-    //     }
         
-        current++;
+        current++; //update the current round after each a loop
     } while (current != rounds);
     
     ofstream fout;    // storing status of game in file.txt
@@ -107,7 +110,7 @@ int main()
     cout << "You are provided with an initial deposit of $40" << endl << endl; 
     format(80, '*');
     
-    play_game(0);
+    play_game(0); //starting the game with current round set to 0
     
 }
 
