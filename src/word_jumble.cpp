@@ -112,7 +112,6 @@ int main()
     cout << endl;
     cout << "Unjumble the given word to continue" << endl;
     cout << "Enter 'hint' for a hint" << endl;
-    cout << "Enter 'quit' to quit the game" << endl; 
     cout << endl; 
     format(80, '*');
     cout << endl;
