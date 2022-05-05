@@ -42,11 +42,12 @@ void play_game(int current)
     cout << "Enter betting amount (must be more than 10) : " ;
     cin >> bet;
     cout << endl;
-    
-    if(bet > amount)
+        
+    while(bet < 10 || bet > amount)
     {
-        cout << "Your betting amount is more than your current balance\n";
-        cout << "Please re-enter amount" << endl; 
+        cout << "Your betting amount should be more than $10 and less than your current balance\n" << endl;
+        cout << "Please re-enter amount :" ; 
+        cin >> bet; 
     }
     
     cout << "Guess a number between 1 and 10 : "; 
