@@ -32,6 +32,8 @@ void play_game(int current)
     int amount = 40; 
     do
     {
+        while(amount != 0)
+        {
     int bet; 
     int dice; 
     int guess;
@@ -42,13 +44,20 @@ void play_game(int current)
     cout << "Enter betting amount (must be more than 10) : " ;
     cin >> bet;
     cout << endl;
-        
+    
     while(bet < 10 || bet > amount)
     {
         cout << "Your betting amount should be more than $10 and less than your current balance\n" << endl;
         cout << "Please re-enter amount :" ; 
         cin >> bet; 
     }
+    
+    // if(bet > amount)
+    // {
+    //     cout << "Your betting amount is more than your current balance\n";
+    //     cout << "Please re-enter amount :" ; 
+    //     cin >> bet; 
+    // }
     
     cout << "Guess a number between 1 and 10 : "; 
     cin >> guess;
@@ -77,7 +86,8 @@ void play_game(int current)
     
         
         current++; //update the current round after each a loop
-    } while (current != rounds || amount != 0);
+        } break;
+    } while (current != rounds);
     
     ofstream fout;    // storing status of game in file.txt
     fout.open("file.txt");
@@ -114,4 +124,3 @@ int main()
     play_game(0); //starting the game with current round set to 0
     
 }
-
