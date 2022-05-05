@@ -77,7 +77,7 @@ void play_game(int current)
     
         
         current++; //update the current round after each a loop
-    } while (current != rounds);
+    } while (current != rounds || amount != 0);
     
     ofstream fout;    // storing status of game in file.txt
     fout.open("file.txt");
