@@ -1,8 +1,9 @@
 # G134 - Maze and Mini games 
-Team members - Sathya Geetha Balaji, Aisan Azizi
-
-Abstract:
-It should be noted that our team chose to implement a maze and mini games project due to several reasons. Firstly, the question of generating a random maze with a solvable path posed an interesting challenge to us, and we had the opportunity to explore different algorithms that implement this idea. Secondly, we preferred to work on several small games rather than a whole due to the fact that we could explore various implementations of interaction with users - i.e. diverse input and output - in a single project. We also believe that a constant change in the flow of the game makes it interesting for the user to keep on playing. Finally, breaking down a conventional maze game and adding our own ideas to it was an enjoyable and educative experience to both of us. Therefore, with the implementation of the features listed below, we aimed to simultaneously meet the project requirements whilst also testing out the capabilities of C++.
+Team members - Sathya Geetha Balaji, Aisan Azizi<br />
+__________________________________________________________
+Abstract:<br /><br />
+It should be noted that our team chose to implement a maze and mini games project due to several reasons.<br /><br />Firstly, the question of generating a random maze with a solvable path posed an interesting challenge to us, and we had the opportunity to explore different algorithms that implement this idea. Secondly, we preferred to work on several small games rather than a whole due to the fact that we could explore various implementations of interaction with users i.e. diverse input and output - in a single project. We also believe that a constant change in the flow of the game makes it interesting for the user to keep on playing. Finally, breaking down a conventional maze game and adding our own ideas to it was an enjoyable and educative experience to both of us.<br /><br />Therefore, with the implementation of the features listed below, we aimed to simultaneously meet the project requirements whilst also testing out the capabilities of C++. <br />
+_____________________________
 
 Objective - To solve the maze and reach the end point.
 
@@ -22,6 +23,7 @@ Game rules:
 1) Maze dimensions must be between 10 and 50.
 2) Player must play mini-games until win in order to progress.
 3) Player wins maze when they reach east/right maze wall.
+___________________________________________________________________________________
 
 List of Features: 
 1) Generation of random game sets or events:
@@ -47,18 +49,18 @@ List of Features:
     - Tic-Tac-Toe mini game
     - Word Jumble mini game
     - Math mini game
- 
     
 6) Others
     - Easy quick start as main program compiles all mini-games automatically using system() command.
     - Multiple mini games allowing different types of interaction between user and program.
     - Possible errors in user input/file compilation/file execution foreseen and measures in place.
+________________________________________________________
  
 Compilation and Execution Instructions:
 1) Download all included files (.txt .cpp) in src directory. Ensure their placement in same directory.
 2) Compile "maze.cpp" file using "g++ -pedantic-errors -std=c++11 maze.cpp -o maze".
 3) Execute game by inputting "./maze" in console.
-
+__________________________________________________________________
 Notes:
 - Server used for testing is academy21.
 - Sample I/O pdf may be located in sample directory.
