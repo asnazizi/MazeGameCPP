@@ -120,22 +120,22 @@ void play_game(int current)
 }
 
 //Input : -
-//Output : 1 if user is the winner, 0 if computer is the winner (type bool)
+//Output : the variable win 
 //Function: checks who won the game compared to all 3 rounds 
-bool winner()
+void winner()
 {
     if (user_status == computer_status)
     {
         //cout << "This game was a tie, please try again" << endl;
         win = computer_status;
-        return false; 
+        //return false; 
     }
     
     else if (user_status > computer_status)
     {
         //cout << "You won the game! You may pass through" << endl;
         win = user_status;
-        return true;
+        //return true;
         
     }
     
@@ -143,7 +143,7 @@ bool winner()
     {
         //cout << "You lost this game, please try again" << endl;
         win = computer_status;
-        return false; 
+        //return false; 
     }
 }
 
@@ -166,7 +166,7 @@ int main()
     
     ofstream myfile; // storing status of game in file.txt
     myfile.open("file.txt");
-    if (win == true )
+    if (win == user_status )
     {
         cout << "\nYou won! You may proceed.\n" << endl;    
         myfile << 1 << endl;
