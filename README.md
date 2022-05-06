@@ -1,7 +1,7 @@
 # G134 - Maze and Mini games 
 Team members - Sathya Geetha Balaji, Aisan Azizi<br />
 __________________________________________________________
-Abstract:<br /><br />
+Problem Statement:<br /><br />
 It should be noted that our team chose to implement a maze and mini games project due to several reasons.<br /><br />Firstly, the question of generating a random maze with a solvable path posed an interesting challenge to us, and we had the opportunity to explore different algorithms that implement this idea. Secondly, we preferred to work on several small games rather than a whole due to the fact that we could explore various implementations of interaction with users i.e. diverse input and output - in a single project. We also believe that a constant change in the flow of the game makes it interesting for the user to keep on playing. Finally, breaking down a conventional maze game and adding our own ideas to it was an enjoyable and educative experience to both of us.<br /><br />Therefore, with the implementation of the features listed below, we aimed to simultaneously meet the project requirements whilst also testing out the capabilities of C++. <br />
 _____________________________
 
