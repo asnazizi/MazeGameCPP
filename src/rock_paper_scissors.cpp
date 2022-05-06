@@ -99,7 +99,7 @@ void play_game(int current)
     {
         cout << "THIS ROUND IS A TIE" << endl;
         cout << endl;
-        computer_status++;
+        //computer_status++;
     }
     
     else if (user == 'r' && maze == 's' ||user == 's' && maze == 'p' || user == 'p' && maze == 'r')
