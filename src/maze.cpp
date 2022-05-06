@@ -193,7 +193,7 @@ void Play(char* maze, int c, int r)
                     pos -=c;
                 }
                 else
-                    cout << "\nInvalid input. Try again.\n" << endl;
+                    cout << "Invalid input. Try again.\n" << endl;
                 turn+=1;
                 break;
             case 's':   // s is down
@@ -203,7 +203,7 @@ void Play(char* maze, int c, int r)
                     pos +=c;
                 }
                 else
-                    cout << "\nInvalid input. Try again.\n" << endl;
+                    cout << "Invalid input. Try again.\n" << endl;
                 turn+=1;
                 break;
             case 'a':   // a is left
@@ -213,7 +213,7 @@ void Play(char* maze, int c, int r)
                     pos -=1;
                 }
                 else
-                    cout << "\nInvalid input. Try again.\n" << endl;
+                    cout << "Invalid input. Try again.\n" << endl;
                 turn+=1;
                 break;
             case 'd':   // d is right
@@ -223,11 +223,11 @@ void Play(char* maze, int c, int r)
                     pos +=1;
                 }
                 else
-                    cout << "\nInvalid input. Try again.\n"<< endl;
+                    cout << "Invalid input. Try again.\n"<< endl;
                 turn+=1;
                 break;
             default:    // in case input value is not valid
-                cout << "\nInvalid input. Try again.\n" << endl;
+                cout << "Invalid input. Try again.\n" << endl;
         }
         maze[pos] = 'X';
 
