@@ -32,7 +32,7 @@ List of Features:
   
 2) Data structures for storing game status:
     - Dynamic array storing user progress throughout the maze, loading user progress after completion of mini-game.
-    - Arrays and enum used as data structures in mini games for storing mini game user status.
+    - Arrays used as data structures in mini games for storing mini game user status for number of turns left.
   
 3) Dynamic memory management:
     - Maze generated in dynamic array by user's inputted dimensions.
